@@ -1,0 +1,376 @@
+/*/font-family: 'Roboto', sans-serif;/*/
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: lightskyblue;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.cabecalho {
+  flex-basis: 30%;
+}
+
+.cabecalho__menuNavegacao {
+}
+
+.cabecalho__menuLista {
+  list-style-type: none;
+}
+
+.cabecalho__logo {
+  margin-bottom: 50px;
+  border-radius: 60px;
+}
+
+.cabecalho__logo img {
+  height: 50px;
+  border-radius: 50px;
+}
+
+.cabecalho__menuItem {
+  box-shadow: inset 0 0 0 0 #54b3d6;
+  color: lightcyan;
+  padding: 0 0.25rem;
+  margin: 0 -0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.cabecalho__menuItem :hover {
+  color: #fff;
+  box-shadow: inset 200px 0 0 0 #54b3d6;
+}
+
+.cabecalho__menuItem img {
+  margin-bottom: 25px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+}
+
+.cabecalho__menuItem a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 22px;
+  vertical-align: top;
+}
+
+.perfil {
+  display: flex;
+  color: black;
+}
+
+.perfil img {
+  margin-bottom: 25px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+}
+
+.perfil a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 22px;
+  vertical-align: top;
+}
+
+.perfil :hover {
+  color: #fff;
+  box-shadow: inset 0 30px 0 0 #54b3d6;
+}
+
+textarea {
+  display: flex;
+  text-align: center;
+  border-radius: 13px;
+  border-style: solid;
+  border-color: #52c5c5;
+  border-width: 1px;
+  width: 120px;
+  height: 30px;
+  resize: auto;
+}
+
+.butao__publicar {
+  margin-top: 10px;
+  border-radius: 9px;
+  border-color: #52c5c5;
+  border-width: 2px;
+}
+
+.conteudoPrincipal {
+  flex-basis: 70%;
+}
+
+.conteudoPrincipal__titulo {
+}
+
+.conteudoPrincipal__formulario {
+}
+
+.conteudoPrincipal__feed {
+}
+
+.textotweet {
+}
+
+.conteudoPrincipal__feed {
+}
+
+.conteudoPrincipal__listaTweets {
+  display: flex;
+  flex-flow: column-reverse nowrap;
+}
+
+.conteudoPrincipal__tweet {
+  padding: 20px 32px;
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid #e7ecf0;
+}
+
+
+.tweet__fotoPerfil {
+  height: 56px;
+  width: 56px;
+  border-radius: 50px;
+}
+
+.tweet__conteudo {
+  margin-left: 13px;
+}
+
+.tweet__conteudo h2 {
+  display: inline-block;
+}
+
+.tweet__conteudo span {
+  display: inline-block;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  background: linear-gradient(152deg, #5ad9ed 27.49%, #ffffff 83.19%);
+}
+
+.tweet__conteudo p {
+  margin-top: 15px;
+  color: #333333;
+}
+
+h4 {
+  text-align: center;
+  color: cyan;
+  background-color: darkcyan;
+}
+
+.tema button {
+  position: absolute;
+  right: 90px;
+  width: 56px;
+  height: 40px;
+  bottom: 650px;
+  font-size: 11px;
+  font-weight: 10px;
+  padding-right: 30px;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 20px;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  color: black;
+}
+
+.dark .tema button {
+  color: cyan;
+  border: 2px solid cyan;
+}
+
+.dark {
+  background: #1c1c1e;
+}
+
+.dark .tema button:hover {
+  box-shadow: 0 0 10px 0 greenyellow inset, 0 0 20px 2px cyan;
+  border: 3px solid cyan;
+}
+
+.dark .cabecalho {
+  background-image: linear-gradient(90deg, darkcyan, #1c1c1e);
+  border-radius: 20px;
+}
+
+.dark .conteudoPrincipal h3 {
+  color: white;
+}
+
+.dark .cabecalho__menuItem a {
+  color: white;
+}
+
+.dark .cabecalho__menuItem {
+  color: cyan;
+}
+
+.dark .perfil a {
+  color: white;
+}
+
+.dark .tweet__conteudo h2 {
+  color: white;
+}
+
+.dark .tweet__conteudo span {
+  display: inline-block;
+  border-radius: 5px;
+  color: #000000;
+  background: linear-gradient(152deg,  #eeeeeec0 27.49%, #ffffff 83.19%);
+}
+
+.dark .tweet__conteudo p {
+  color: white;
+}
+
+.tema_b button {
+  position: absolute;
+  right: 180px;
+  width: 56px;
+  height: 40px;
+  bottom: 650px;
+  font-size: 10px;
+  font-weight: 10px;
+  padding-right: 30px;
+  background-color: transparent;
+  border: 2px solid lightpink;
+  border-radius: 20px;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  color: salmon;
+}
+
+.darkb .tema_b button {
+  color: white;
+  background-color: #aa7cb8;
+  border: 2px solid #ffffff;
+}
+
+.darkb {
+  background: #aa7cb8;
+}
+
+.darkb .tema_b button:hover {
+  box-shadow: 0 0 10px 0 rgb(215, 83, 255) inset, 0 0 20px 2px #aa7cb8;
+  border: 3px solid white;
+}
+
+.darkb .conteudoPrincipal__formulario .textarea{
+  border-color: #75f739;
+}
+
+.darkb .cabecalho {
+  background-image: linear-gradient(90deg, #c5c5c5, #aa7cb8);
+  border-radius: 20px;
+}
+
+.darkb .conteudoPrincipal h3 {
+  color: lightgoldenrodyellow;
+}
+
+.darkb .tweet__conteudo span {
+  display: inline-block;
+  border-radius: 5px;
+  color: #ffffff;
+  background: linear-gradient(152deg,  #000000c0 27.49%, #f5adff 83.19%);
+}
+
+
+.darkb .cabecalho__menuItem a {
+  color: lightyellow;
+}
+
+.darkb .cabecalho__menuItem {
+  color: lightyellow;
+}
+
+.darkb .perfil a {
+  color: lightyellow;
+}
+
+.darkb .tweet__conteudo h2 {
+  color: white;
+}
+
+.darkb .tweet__conteudo p {
+  color: whitesmoke;
+}
+
+.tema_c button {
+  position: absolute;
+  right: 265px;
+  width: 56px;
+  height: 40px;
+  bottom: 650px;
+  font-size: 10px;
+  font-weight: 10px;
+  padding-right: 30px;
+  background-color: transparent;
+  border: 2px solid yellow;
+  border-radius: 20px;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  color: yellow;
+}
+
+.darkc .tema_c button {
+  color: #ffb6ad;
+  background-color: lightgoldenrodyellow;
+}
+
+.darkc {
+  background: #e2d182;
+  border-color: white;
+}
+
+.darkc .tema_c button:hover {
+  box-shadow: 0 0 10px 0 white inset, 0 0 20px 2px white;
+  border: 3px solid lightcyan;
+}
+
+.darkc .cabecalho {
+  background-image: linear-gradient(90deg, whitesmoke, #e2d182);
+  border-radius: 20px;
+}
+
+.darkc .conteudoPrincipal h3 {
+  color: black;
+}
+
+.darkc .cabecalho__menuItem a {
+  color: #000000;
+}
+
+.darkc .cabecalho__menuItem {
+  color: #000000;
+}
+
+.darkc .perfil a {
+  color: #000000;
+}
+
+.darkc .tweet__conteudo h2 {
+  color: #000000
+}
+
+.darkc .tweet__conteudo span {
+  display: inline-block;
+  border-radius: 5px;
+  color: #000000;
+  background: linear-gradient(152deg,  #cfa900 27.49%, #ffffff 83.19%);
+}
+
+.darkc .tweet__conteudo p {
+  color: #000000;
+}
